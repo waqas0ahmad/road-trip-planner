@@ -4,10 +4,15 @@ function DefaultLayout(props) {
     return (
         <html>
             <head>
-                <title>{props.title}</title>
-                <link rel="stylesheet" href="/assets/bootstrap.min.css" />
+                <meta charset="UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>React</title>
             </head>
-            <body className='bg-light'>{props.children}</body>
+            <body>
+                <div id="root"></div>
+            </body>
+            <script src="/react/bundle.min.js"></script>
         </html>
     );
 }
